@@ -100,6 +100,20 @@ In order to complete this assignment, you must do the following:
 5.  Submit to Coursera the URL to your GitHub repository that contains
     the completed R code for the assignment.
 
-### Grading
+### This is the result of my R script
 
-This assignment will be graded via peer assessment.
+<!-- -->
+
+source("cachematrix.R")
+
+myMatrix <- makeCacheMatrix(matrix(4:7,2,2))    
+
+myMatrix$get()             [,1] [,2]    [1,]    4    6    [2,]    5    7        
+
+myMatrix$getInverseMatrix()    NULL        
+
+cacheSolve(myMatrix)            [,1] [,2]    [1,] -3.5    3    [2,]  2.5   -2    
+
+myMatrix$get()            [,1] [,2]    [1,]    4    6    [2,]    5    7    
+
+myMatrix$getInverseMatrix()        [,1] [,2]    [1,] -3.5    3    [2,]  2.5   -2
