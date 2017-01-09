@@ -102,18 +102,32 @@ In order to complete this assignment, you must do the following:
 
 ### This is the result of my R script
 
-<!-- -->
-
+``` R
 source("cachematrix.R")
 
 myMatrix <- makeCacheMatrix(matrix(4:7,2,2))    
 
-myMatrix$get()             [,1] [,2]    [1,]    4    6    [2,]    5    7        
+myMatrix$get()
+    [,1] [,2]    
+[1,]    4    6    
+[2,]    5    7        
 
-myMatrix$getInverseMatrix()    NULL        
+myMatrix$getInverseMatrix()    
+NULL        
 
-cacheSolve(myMatrix)            [,1] [,2]    [1,] -3.5    3    [2,]  2.5   -2    
+cacheSolve(myMatrix)
+    [,1] [,2]
+[1,] -3.5    3    
+[2,]  2.5   -2    
 
-myMatrix$get()            [,1] [,2]    [1,]    4    6    [2,]    5    7    
+myMatrix$get()
+    [,1] [,2]
+[1,]    4    6    
+[2,]    5    7    
 
-myMatrix$getInverseMatrix()        [,1] [,2]    [1,] -3.5    3    [2,]  2.5   -2
+myMatrix$getInverseMatrix()        
+    [,1] [,2]    
+[1,] -3.5    3    
+[2,]  2.5   -2
+
+```
